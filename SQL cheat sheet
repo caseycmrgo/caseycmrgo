@@ -1,0 +1,54 @@
+**look into how to do markdowns 
+
+Basics:
+
+--SQL stands for structured query language. This language allows data analysts to work with data bases. It can handle huge amounts of data. 
+
+--To pull up a table from a data set
+
+Select *
+from datasetname.tablename
+
+--to filter data use WHERE
+
+select *
+from datasetname.tablename
+where column2 = value
+
+-- to sort data use ORDER BY
+
+Select *
+from datasetname.tablename
+Order by column
+
+-automatically ordered by ascending, can order by descending by using DESC
+
+--to insert info into a table
+
+insert into datasetname.tablename
+(column1, column2, column3)
+values (value1, value2, value3) 
+
+--to update info in a table
+
+update dataset.tablename
+set column1 = newvalue
+where = condition
+
+--to create a new table (to save our modified table we can save it as a new table) 
+
+create table dataset.newtablename as
+select column1,
+column2
+from dataset.oldtablename
+
+-you can add the where clause to get more specific if need be 
+
+Cleaning in SQL:
+
+-- to avoid duplicates use DISTINCT
+
+Select
+Distinct column1
+from datasetname.tablename
+
